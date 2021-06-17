@@ -5,20 +5,20 @@
 class Plenti < Formula
   desc "Dead simple SSG with Svelte frontend and Go CLI."
   homepage "https://plenti.co/"
-  version "0.4.22"
+  version "0.4.23"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/plentico/plenti/releases/download/v0.4.22/plenti_0.4.22_Mac_64-bit.tar.gz"
-      sha256 "d86440478a4811ee770df1c46785d4adebf2731ef1c35788f1c138cc2dfb5ecd"
+      url "https://github.com/plentico/plenti/releases/download/v0.4.23/plenti_0.4.23_Mac_64-bit.tar.gz"
+      sha256 "71b0223ad10ac80bb010d3982b04c54b7e1d9ff1c2b3b957a5a0f6278ed6e1e4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/plentico/plenti/releases/download/v0.4.22/plenti_0.4.22_Linux_64-bit.tar.gz"
-      sha256 "9985e2d6899bfd2c6bb3414540a830fdc43e9b6efd3cd13005a7d5e4a441b9ba"
+      url "https://github.com/plentico/plenti/releases/download/v0.4.23/plenti_0.4.23_Linux_64-bit.tar.gz"
+      sha256 "4ac677748e96590c21b6a7acd229c583ecf678d58c05eec82eee59f483c1a889"
     end
   end
 
