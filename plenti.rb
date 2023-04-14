@@ -5,31 +5,31 @@
 class Plenti < Formula
   desc "Dead simple SSG with Svelte frontend and Go CLI."
   homepage "https://plenti.co/"
-  version "0.6.8"
+  version "0.6.9"
 
   on_macos do
-    url "https://github.com/plentico/plenti/releases/download/v0.6.8/plenti_0.6.8_Mac_64-bit.tar.gz"
-    sha256 "4f30006fdffde9d48945d29f6c7deb59b7857603c16fc3a7d705c05486375e53"
+    if Hardware::CPU.intel?
+      url "https://github.com/plentico/plenti/releases/download/v0.6.9/plenti_0.6.9_Mac_64-bit.tar.gz"
+      sha256 "c155c8c66529e3492e2fbcb9d1d1908bd38f29e9fc7a286eb8818d9a1e1f17ca"
 
-    def install
-      bin.install "plenti"
+      def install
+        bin.install "plenti"
+      end
     end
-
     if Hardware::CPU.arm?
-      def caveats
-        <<~EOS
-          The darwin_arm64 architecture is not supported for the Plenti
-          formula at this time. The darwin_amd64 binary may work in compatibility
-          mode, but it might not be fully supported.
-        EOS
+      url "https://github.com/plentico/plenti/releases/download/v0.6.9/plenti_0.6.9_Mac_arm64.tar.gz"
+      sha256 "b8a4933f94badcec3b179a1859e500da37b1b98271420d03204da9b6ebd2f529"
+
+      def install
+        bin.install "plenti"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/plentico/plenti/releases/download/v0.6.8/plenti_0.6.8_Linux_64-bit.tar.gz"
-      sha256 "1e92987b792468e16ef26aecd34642b0a39646cd987fd58c8a95fa24e32058c5"
+      url "https://github.com/plentico/plenti/releases/download/v0.6.9/plenti_0.6.9_Linux_64-bit.tar.gz"
+      sha256 "4051511969a3702d9b5df54ab099b6d76b55b8b80fe50d6089a1e11a636717d9"
 
       def install
         bin.install "plenti"
