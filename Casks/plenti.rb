@@ -12,13 +12,13 @@ cask "plenti" do
 
   on_macos do
     url "https://github.com/plentico/plenti/releases/download/v0.7.26/plenti_0.7.26_mac_64-bit.tar.gz"
-    sha256 "31fc6c911cc49aa9b7c8a37acb7f599a6f73b671a6106d128d888978b58c769d"
+    sha256 "aaeba3bddb27c04a4edd81d0414f27a99c6062df4991fdea2240c4237f5fbd72"
   end
 
   on_linux do
     on_intel do
       url "https://github.com/plentico/plenti/releases/download/v0.7.26/plenti_0.7.26_linux_64-bit.tar.gz"
-      sha256 "3cd459459206283b503bc35fdc8c6698e1c4a73aa155ab974c56729471d3dc34"
+      sha256 "d31ff0f59a370f632c80f9c7c41576b8695091897bdd4d2fdfbda9ee5ab6bf07"
     end
   end
 
