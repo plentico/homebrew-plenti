@@ -2,7 +2,7 @@
 cask "plenti" do
   desc "Dead simple SSG with Svelte frontend and Go CLI."
   homepage "https://plenti.co/"
-  version "0.7.25"
+  version "0.7.26"
 
   livecheck do
     skip "Auto-generated on release."
@@ -11,14 +11,14 @@ cask "plenti" do
   binary "plenti"
 
   on_macos do
-    url "https://github.com/plentico/plenti/releases/download/v0.7.25/plenti_0.7.25_mac_64-bit.tar.gz"
-    sha256 "75b30f5c3d919604d93f3b867576ae6a648c2e25e3b2acd863928a8bfad7e166"
+    url "https://github.com/plentico/plenti/releases/download/v0.7.26/plenti_0.7.26_mac_64-bit.tar.gz"
+    sha256 "31fc6c911cc49aa9b7c8a37acb7f599a6f73b671a6106d128d888978b58c769d"
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/plentico/plenti/releases/download/v0.7.25/plenti_0.7.25_linux_64-bit.tar.gz"
-      sha256 "d101bab55e2f18cfd22e43dd0e138755749266625bfd503ced2c8e88d06c564a"
+      url "https://github.com/plentico/plenti/releases/download/v0.7.26/plenti_0.7.26_linux_64-bit.tar.gz"
+      sha256 "3cd459459206283b503bc35fdc8c6698e1c4a73aa155ab974c56729471d3dc34"
     end
   end
 
